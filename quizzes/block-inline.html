@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Block vs Inline Elements</title>
     <style>
-        .inline {
-            display: inline;
-            background-color: lightcoral;
-        }
+      .inline {
+        display: inline;
+        background-color: lightcoral;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h2>Block Elements</h2>
+    <div>
+      <p>This is a block element.</p>
+      <p>
+        Block elements start on a new line and take up the full width available.
+      </p>
+      <p>They stack vertically on top of each other.</p>
+    </div>
 
-<h2>Block Elements</h2>
-<div>
-    <p>This is a block element.</p>
-    <p>Block elements start on a new line and take up the full width available.</p>
-    <p>They stack vertically on top of each other.</p>
-</div>
-
-<h2>Inline Elements</h2>
-<div>
-    <p>This is an inline element.</p>
-    <p>Inline elements do not start on a new line and only take up as much width as necessary.</p>
-    <p>They flow horizontally, allowing other elements to sit beside them.</p>
-</div>
-
-</body>
+    <h2>Inline Elements</h2>
+    <div>
+      <p class="inline">
+        <span style="border: 1px solid black">is an inline element.</span
+        ><span style="border: 1px solid black"
+          >Inline elements do not start on a new line and only take up as much
+          width as necessary.</span
+        >
+        <spa style="border: 1px solid black"
+          >flow horizontally, allowing other elements to sit beside them.</spa
+        >
+      </p>
+    </div>
+  </body>
 </html>
